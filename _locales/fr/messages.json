@@ -1,0 +1,20 @@
+  {
+    "extensionDescription": {
+      "message": "Masque les notes Letterboxd tant que vous n'avez pas vu le film pour garantir une expérience objective."
+    },
+    "hideRatings": {
+      "message": "Cacher les notes"
+    },
+    "resetBtn": {
+      "message": "Réinitialiser"
+    },
+    "truthButton": {
+      "message": "Sésame, ouvre-toi !"
+    },
+    "truthButtonTitle": {
+      "message": "Révéler les évaluations"
+    },
+    "hiddenRatingsText": {
+      "message": "Les notes sont cachées car vous n'avez pas log / regardé ce film."
+    }
+  }
