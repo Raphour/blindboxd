@@ -2,19 +2,25 @@
     "extensionDescription": {
         "message": "Oculta las puntuaciones de Letterboxd hasta que hayas visto la película para garantizar una experiencia objetiva."
     },
-    "hideRatings": {
-        "message": "Ocultar puntuaciones"
-    },
     "resetBtn": {
         "message": "Reiniciar memoria"
     },
     "truthButton": {
         "message": "Abre los ojos"
     },
-    "truthButtonTitle": {
+    "truthButtonTooltip": {
         "message": "Revelar las puntuaciones"
     },
     "hiddenRatingsText": {
         "message": "La puntuación está oculta porque no has registrado ni visto esta película."
+    },
+    "popupTitle": {
+        "message": "Ocultar valoraciones"
+    },
+    "switchTooltip": {
+        "message": "Activar/Desactivar extensión"
+    },
+    "resetBtnTooltip": {
+        "message": "Olvida las películas reveladas; se volverá a pedir confirmación para ver las notas de películas no vistas."
     }
 }
