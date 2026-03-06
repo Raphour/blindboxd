@@ -2,19 +2,25 @@
     "extensionDescription": {
         "message": "Hides Letterboxd ratings until you have watched the movie to ensure an unbiased viewing experience."
     },
-    "hideRatings": {
-        "message": "Hide Ratings"
-    },
     "resetBtn": {
         "message": "Reset Memory"
     },
     "truthButton": {
         "message": "What's in the box ?!"
     },
-    "truthButtonTitle": {
+    "truthButtonTooltip": {
         "message": "Reveal the ratings"
     },
     "hiddenRatingsText": {
         "message": "Rating is hidden because you have not logged / watched this movie."
+    },
+    "popupTitle": {
+        "message": "Hide Ratings"
+    },
+    "switchTooltip": {
+        "message": "Enable/Disable extension"
+    },
+    "resetBtnTooltip": {
+        "message": "Forget revealed movies; will ask for confirmation again to see ratings for films you haven't watched."
     }
 }

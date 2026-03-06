@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    applyTranslations();
     const toggleSwitch = document.getElementById('toggleSwitch');
     const resetBtn = document.getElementById('resetBtn');
 
@@ -38,6 +39,24 @@ async function clearSeenMovies() {
         func: () => {
             localStorage.removeItem('movies');
             location.reload();
+        }
+    });
+}
+
+function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translation = chrome.i18n.getMessage(key);
+        if (translation) {
+            el.textContent = translation;
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+        const key = el.getAttribute('data-i18n-title');
+        const translation = chrome.i18n.getMessage(key);
+        if (translation) {
+            el.title = translation;
         }
     });
 }

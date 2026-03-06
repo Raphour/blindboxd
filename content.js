@@ -73,7 +73,7 @@ chrome.storage.local.get(['extensionEnabled'], (result) => {
                 show_the_truth.style.fontWeight = 'bold';
                 show_the_truth.style.display = 'block';
                 show_the_truth.style.marginTop = '5px';
-                show_the_truth.title = chrome.i18n.getMessage("truthButtonTitle");
+                show_the_truth.title = chrome.i18n.getMessage("truthButtonTooltip");
 
                 show_the_truth.addEventListener('click', function () {
                     hide_histogram_chart.style.display = 'none';
