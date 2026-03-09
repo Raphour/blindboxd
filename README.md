@@ -33,7 +33,7 @@ Have you ever opened a Letterboxd page and immediately had your expectations ske
 
 ### From the Web Store (Recommended)
 
-* **Chrome / Edge:** *coming soon*
+* **Chrome :** [Install from Chrome Web Store](https://chromewebstore.google.com/detail/kffndkmjflgdmlcidlhockpljdpibcbl)
 * **Firefox:** *coming soon*
 
 ### Manual Installation (For Developers)
