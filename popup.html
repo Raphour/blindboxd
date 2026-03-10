@@ -78,16 +78,24 @@
             border: 1px solid #444;
             padding: 8px 12px;
             border-radius: 3px;
-            cursor: pointer;
             font-size: 12px;
             width: 100%;
             transition: 0.2s;
         }
 
-        #resetBtn:hover {
+        #resetBtn:enabled:hover {
+            cursor: pointer;
             background-color: #ff4040;
             color: #fff;
             border-color: #ff4040;
+        }
+
+        #resetBtn:disabled {
+            cursor: not-allowed;
+        }
+        #toggleSwitch:disabled + .slider {
+            background-color: #555;
+            cursor: not-allowed;
         }
     </style>
 </head>

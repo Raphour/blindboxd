@@ -3,23 +3,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleSwitch = document.getElementById('toggleSwitch');
     const resetBtn = document.getElementById('resetBtn');
 
-    chrome.storage.local.get(['extensionEnabled'], (result) => {
-        const isEnabled = result.extensionEnabled !== false;
-        toggleSwitch.checked = isEnabled;
-    });
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        const currentTab = tabs[0];
+        if (currentTab && currentTab.url && currentTab.url.includes("letterboxd.com")) {
+            chrome.storage.local.get(['extensionEnabled'], (result) => {
+                const isEnabled = result.extensionEnabled !== false;
+                toggleSwitch.checked = isEnabled;
+            });
 
-    toggleSwitch.addEventListener('change', () => {
-        chrome.storage.local.set({ extensionEnabled: toggleSwitch.checked });
-        reloadCurrentTab();
-    });
+            toggleSwitch.addEventListener('change', () => {
+                chrome.storage.local.set({ extensionEnabled: toggleSwitch.checked });
+                reloadCurrentTab();
+            });
 
-    resetBtn.addEventListener('click', async () => {
-        let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-
-        if (tab && tab.url && tab.url.includes("letterboxd.com")) {
-            await clearSeenMovies();
+            resetBtn.addEventListener('click', async () => {
+                await clearSeenMovies();
+            });
         } else {
-            alert("Please open a Letterboxd page to reset the memory.");
+            toggleSwitch.disabled = true;
+            resetBtn.disabled = true;
+            document.body.style.opacity = 0.5;
         }
     });
 });
