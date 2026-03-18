@@ -1,0 +1,26 @@
+{
+    "extensionDescription": {
+        "message": "Blendet Letterboxd-Bewertungen aus, bis du den Film gesehen hast, um ein unvoreingenommenes Seherlebnis zu gewährleisten."
+    },
+    "resetBtn": {
+        "message": "Speicher zurücksetzen"
+    },
+    "truthButton": {
+        "message": "Was ist in der Box?!"
+    },
+    "truthButtonTooltip": {
+        "message": "Bewertungen enthüllen"
+    },
+    "hiddenRatingsText": {
+        "message": "Die Bewertung ist ausgeblendet, da du diesen Film noch nicht protokolliert oder gesehen hast."
+    },
+    "popupTitle": {
+        "message": "Bewertungen ausblenden"
+    },
+    "switchTooltip": {
+        "message": "Erweiterung aktivieren/deaktivieren"
+    },
+    "resetBtnTooltip": {
+        "message": "Enthüllte Filme vergessen; es wird erneut eine Bestätigung verlangt, um Bewertungen für nicht gesehene Filme anzuzeigen."
+    }
+}
